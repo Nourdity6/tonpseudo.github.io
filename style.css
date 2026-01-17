@@ -1,34 +1,51 @@
 body {
   margin: 0;
-  background-color: black;
-  color: white;
-  text-align: center;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, sans-serif;
 }
 
-header {
-  padding: 100px 20px;
+/* TEXTE NDY6 */
+.neon {
+  font-size: 80px;
+  color: #00ffff;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 15px #00ffff,
+    0 0 30px #00ffff,
+    0 0 60px #00ffff;
+  animation: pulse 2s infinite;
 }
 
-h1 {
-  font-size: 60px;
-  color: cyan;
-}
-
-.yt-btn {
-  display: inline-block;
-  margin-top: 40px;
-  padding: 15px 25px;
-  border: 2px solid red;
+/* SOUS-TEXTE */
+.subtitle {
+  margin-top: 20px;
   color: white;
-  text-decoration: none;
-}
-section {
-  padding: 60px 20px;
+  opacity: 0.8;
 }
 
-iframe {
-  max-width: 90%;
-  border-radius: 15px;
-  box-shadow: 0 0 30px cyan;
+/* ANIMATION */
+@keyframes pulse {
+  0% {
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 15px #00ffff,
+      0 0 30px #00ffff;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #ffffff,
+      0 0 30px #00ffff,
+      0 0 60px #00ffff;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 15px #00ffff,
+      0 0 30px #00ffff;
+  }
 }
