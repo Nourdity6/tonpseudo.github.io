@@ -4,8 +4,8 @@ body {
   background: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* aligne verticalement */
+  align-items: center;     /* aligne horizontalement */
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -68,3 +68,4 @@ body {
   color: black;
   box-shadow: 0 0 20px #00ffff;
 }
+
