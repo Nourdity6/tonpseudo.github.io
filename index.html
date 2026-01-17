@@ -1,21 +1,51 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Test vidéo</title>
-</head>
-<body style="background:black; color:white; text-align:center;">
+body {
+  margin: 0;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
 
-  <h1>TEST VIDÉO</h1>
+/* TEXTE NDY6 */
+.neon {
+  font-size: 80px;
+  color: #00ffff;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 15px #00ffff,
+    0 0 30px #00ffff,
+    0 0 60px #00ffff;
+  animation: pulse 2s infinite;
+}
 
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-    title="YouTube video player"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+/* SOUS-TEXTE */
+.subtitle {
+  margin-top: 20px;
+  color: white;
+  opacity: 0.8;
+}
 
-</body>
-</html>
+/* ANIMATION */
+@keyframes pulse {
+  0% {
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 15px #00ffff,
+      0 0 30px #00ffff;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #ffffff,
+      0 0 30px #00ffff,
+      0 0 60px #00ffff;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 15px #00ffff,
+      0 0 30px #00ffff;
+  }
+}
