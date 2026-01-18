@@ -27,12 +27,12 @@ body {
 
 .neon {
   font-size: 80px;
-  color: #00ffff;
-  text-shadow:
-    0 0 5px #00ffff,
-    0 0 15px #00ffff,
-    0 0 30px #00ffff,
-    0 0 60px #00ffff;
+  color: orange;
+  text-shadow:orange,
+    0 0 5px orange,
+    0 0 15px orange,
+    0 0 30px orange,
+    0 0 60px orange;
   animation: pulse 2s infinite;
 }
 
@@ -91,6 +91,7 @@ body {
       0 0 30px #00ffff;
   }
 }
+
 
 
 
