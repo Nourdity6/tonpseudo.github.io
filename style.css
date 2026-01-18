@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background-image: url("images/galaxy.jpg");
+  background-image: url("https://raw.githubusercontent.com/Nourdity6/tonpseudo.github.io/refs/heads/main/images/galaxy.jpg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,6 +91,7 @@ body {
       0 0 30px #00ffff;
   }
 }
+
 
 
 
