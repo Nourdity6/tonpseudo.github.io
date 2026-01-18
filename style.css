@@ -6,17 +6,17 @@ html, body {
 }
 
 body {
-  background-image: url("https://raw.githubusercontent.com/Nourdity6/tonpseudo.github.io/refs/heads/main/images/galaxy.jpg.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-family: Arial, sans-serif;
   text-align: center;
+  font-family: Arial, sans-serif;
+
+  /* Fond galaxie direct avec URL raw GitHub */
+  background-image: url("https://raw.githubusercontent.com/Nourdity/tonpseudo.github.io/main/images/galaxy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -91,6 +91,7 @@ body {
       0 0 30px #00ffff;
   }
 }
+
 
 
 
