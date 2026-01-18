@@ -1,5 +1,4 @@
 body {
-body {
   margin: 0;
   height: 100vh;
   background-image: url("images/galaxy.jpg");
@@ -85,5 +84,6 @@ body {
       0 0 30px #00ffff;
   }
 }
+
 
 
