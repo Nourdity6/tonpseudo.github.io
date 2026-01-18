@@ -3,19 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <title>Nourdity6</title>
- </head><link rel="stylesheet" href="style.css">
-<body>
+  <style>
+    /* Corps et fond galactique */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-image: url("https://raw.githubusercontent.com/Nourdity6/tonpseudo.github.io/main/images/galaxy.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
+    /* Conteneur pour centrer tout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Titre Nourdity6 en orange néon */
+    .neon {
+      font-size: 80px;
+      color: orange;
+      text-shadow:
+        0 0 5px orange,
+        0 0 15px orange,
+        0 0 30px orange,
+        0 0 60px orange;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        text-shadow:
+          0 0 5px orange,
+          0 0 15px orange,
+          0 0 30px orange;
+      }
+      50% {
+        text-shadow:
+          0 0 10px #ffffff,
+          0 0 30px orange,
+          0 0 60px orange;
+      }
+      100% {
+        text-shadow:
+          0 0 5px orange,
+          0 0 15px orange,
+          0 0 30px orange;
+      }
+    }
+
+    /* Sous-titre */
+    .subtitle {
+      margin-top: 20px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    /* Bouton YouTube RGB animé */
+    .yt-btn {
+      margin-top: 30px;
+      padding: 15px 35px;
+      border-radius: 30px;
+      border: 3px solid red;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: borderRGB 5s linear infinite;
+    }
+    .yt-btn:hover {
+      background: white;
+      color: black;
+      box-shadow: 0 0 20px white;
+    }
+    @keyframes borderRGB {
+      0% { border-color: red; }
+      20% { border-color: orange; }
+      40% { border-color: yellow; }
+      60% { border-color: green; }
+      80% { border-color: blue; }
+      100% { border-color: red; }
+    }
+  </style>
+</head>
+<body>
   <div class="container">
     <h1 class="neon">Nourdity6</h1>
     <p class="subtitle">Chaîne YouTube Gaming</p>
-
-    <a class="yt-btn" href="https://www.youtube.com/@Nourdity6" target="_blank">
-      Ma chaîne YouTube
-    </a>
+    <a class="yt-btn" href="https://www.youtube.com/@TON_PSEUDO" target="_blank">Ma chaîne YouTube</a>
   </div>
-
 </body>
 </html>
-
-
