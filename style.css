@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background: black;
+  background-image: url("images/galaxy.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,3 +81,4 @@ body {
       0 0 30px #00ffff;
   }
 }
+
